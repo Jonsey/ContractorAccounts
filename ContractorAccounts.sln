@@ -3,18 +3,61 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractorAccounts.Desktop", "ContractorAccounts.Desktop\ContractorAccounts.Desktop.csproj", "{6A323608-F334-4BB3-8FAE-5AC632C41758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyAccounts.Companies", "Modules\CompanyAccounts.Companies\CompanyAccounts.Companies.csproj", "{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9361F117-7D4B-486F-9B5F-39CE1C3CA85B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Companies", "Companies", "{CA64B02A-DF63-4BA5-8911-37B7EEF18AF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyAccounts.Companies.Tests", "Modules\Tests\CompanyAccounts.Companies.Tests\CompanyAccounts.Companies.Tests.csproj", "{15550247-AB89-45D8-930D-14485917A577}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Debug|x86.ActiveCfg = Debug|x86
 		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Debug|x86.Build.0 = Debug|x86
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Release|Any CPU.ActiveCfg = Release|x86
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Release|Mixed Platforms.Build.0 = Release|x86
 		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Release|x86.ActiveCfg = Release|x86
 		{6A323608-F334-4BB3-8FAE-5AC632C41758}.Release|x86.Build.0 = Release|x86
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0}.Release|x86.ActiveCfg = Release|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{15550247-AB89-45D8-930D-14485917A577}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA64B02A-DF63-4BA5-8911-37B7EEF18AF6} = {9361F117-7D4B-486F-9B5F-39CE1C3CA85B}
+		{F5F050AA-DCDC-4494-BCD6-85C942BC1CD0} = {CA64B02A-DF63-4BA5-8911-37B7EEF18AF6}
+		{15550247-AB89-45D8-930D-14485917A577} = {CA64B02A-DF63-4BA5-8911-37B7EEF18AF6}
 	EndGlobalSection
 EndGlobal
