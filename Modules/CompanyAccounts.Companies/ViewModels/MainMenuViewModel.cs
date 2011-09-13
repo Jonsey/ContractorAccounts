@@ -9,7 +9,7 @@ namespace CompanyAccounts.Companies.ViewModels
 {
     
 
-    public sealed class MainMenuViewModel
+    public sealed class MainMenuViewModel : IMainMenuViewModel
     {
         enum CompanyViews
         {

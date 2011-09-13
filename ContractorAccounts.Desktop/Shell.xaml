@@ -1,0 +1,24 @@
+﻿<Window x:Class="ContractorAccounts.Desktop.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Regions="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+        Title="Contractor Accounts" Height="600" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <ItemsControl DockPanel.Dock="Top" Background="#527BAD" Height="50"  Regions:RegionManager.RegionName="MenuRegion">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <ItemsControl Background="#aaaaaa" Regions:RegionManager.RegionName="MainRegion">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </DockPanel>
+    </Grid>
+</Window>
