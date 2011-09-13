@@ -3,9 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <TextBlock>Create Company View</TextBlock>
-    </Grid>
+             mc:Ignorable="d" HorizontalContentAlignment="Center" 
+             d:DesignHeight="180" d:DesignWidth="400">
+
+    <Border BorderBrush="Black" BorderThickness="1" Background="White" CornerRadius="10" Margin="10" Padding="10">
+        <Border.Effect>
+            <DropShadowEffect Opacity="1" ShadowDepth="1" Direction="100" BlurRadius="40" Color="#FF6C93B4" />
+        </Border.Effect>
+        <Grid Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Company Name:</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Name}"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">Company Type:</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Type}"/>
+
+                <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Cancel" Command="{Binding CreateCompanyCommand}" Margin="5" Width="100"/>
+                <Button Content="Create Company" Command="{Binding CancelCommand}" Margin="5" Width="100"/>
+                </StackPanel>
+
+            </Grid>
+    </Border>
 </UserControl>

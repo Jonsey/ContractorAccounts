@@ -5,14 +5,14 @@
         Title="Contractor Accounts" Height="600" Width="800">
     <Grid>
         <DockPanel LastChildFill="True">
-            <ItemsControl DockPanel.Dock="Top" Background="#527BAD" Height="50"  Regions:RegionManager.RegionName="MenuRegion">
+            <ItemsControl DockPanel.Dock="Top" Background="#527BAD" Padding="10" Height="70"  Regions:RegionManager.RegionName="MenuRegion">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
-            <ItemsControl Background="#aaaaaa" Regions:RegionManager.RegionName="MainRegion">
+            <ItemsControl Background="White" Padding="10" Regions:RegionManager.RegionName="MainRegion">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel/>
